@@ -1,0 +1,22 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "A new work portfolio for my personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimanopower/newPortfolio.git"
+  },
+  "author": "Tristan Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shimanopower/newPortfolio/issues"
+  },
+  "homepage": "https://github.com/shimanopower/newPortfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
