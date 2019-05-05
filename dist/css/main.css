@@ -156,22 +156,28 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
+.about-top {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "box1";
+  grid-template-areas: "bioimage bio bio";
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
+  .about-top .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #d4fe01 3px solid; }
-  .about-info .bio {
+  .about-top .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .box-1 {
+
+.about-bottom {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "box1";
+  grid-template-columns: 1fr; }
+  .about-bottom .box-1 {
     grid-area: box1; }
-  .about-info .box {
+  .about-bottom .box {
     background: #605b5b;
     padding: 0.5rem;
     border-bottom: #d4fe01 5px solid; }
@@ -265,8 +271,8 @@ main {
       background: url("../img/workProfile.jpg");
       width: 150px;
       height: 150px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "box1" "box2" "box3";
+  .about-top {
+    grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

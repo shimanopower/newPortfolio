@@ -50,13 +50,10 @@
     }
   }
 
-  .about-info {
+  .about-top {
     grid-template-areas:
       "bioimage"
-      "bio"
-      "box1"
-      "box2"
-      "box3";
+      "bio";
 
     grid-template-columns: 1fr;
   }
