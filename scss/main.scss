@@ -76,10 +76,12 @@ main {
 
 // about page
 
-.about-top {
+.about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio";
+  grid-template-areas:
+    "bioimage bio bio"
+    "box1 box1 box1";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -93,13 +95,6 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
-}
-
-.about-bottom {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "box1";
-  grid-template-columns: 1fr;
 
   .box-1 {
     grid-area: box1;
