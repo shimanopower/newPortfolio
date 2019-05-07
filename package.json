@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A new work portfolio for my personal website",
   "main": "index.js",
-  "homepage": "http://shimanopower.github.io/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -17,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/shimanopower/newPortfolio/issues"
   },
-  "homepage": "https://github.com/shimanopower/newPortfolio#readme",
+  "homepage": "https://www.audreysmonsters.com/newPortfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
