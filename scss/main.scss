@@ -135,7 +135,7 @@ main {
   align-items: center;
   margin-top: 1rem;
 
-  .div {
+  div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
@@ -160,7 +160,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  &.hover {
+  &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
   }
@@ -174,7 +174,7 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: lighten($primary-color, 50);
   color: #333;
 }
 
