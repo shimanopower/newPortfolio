@@ -194,17 +194,20 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  .boxes div {
+  .boxes div,
+  .boxes .email-link {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
+    .boxes div:hover,
+    .boxes .email-link:hover {
       padding: 0.5rem 1.5rem;
       background: #d4fe01;
       color: #000; }
-      .boxes div:hover span {
+      .boxes div:hover span,
+      .boxes .email-link:hover span {
         color: #000; }
 
 .btn, .btn-dark, .btn-light {
