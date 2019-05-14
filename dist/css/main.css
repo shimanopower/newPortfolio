@@ -143,7 +143,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  height: 100%; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -183,7 +183,7 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img.hover {
+    .projects img:hover {
       opacity: 0.5;
       border-color: #d4fe01;
       transition: all 0.5s ease-out; }
