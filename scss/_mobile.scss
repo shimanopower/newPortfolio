@@ -61,6 +61,16 @@
     grid-template-columns: 1fr;
   }
 
+  .learnterminal-info {
+    grid-template-areas:
+      "projectvideo"
+      "projectsummary"
+      "codesnippet"
+      "textareabox";
+
+    grid-template-columns: 1fr;
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -83,3 +93,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+//@include landscape {
+//  html {
+//    transform: rotate(-90deg);
+//  }
+//}

@@ -136,7 +136,7 @@ main {
   margin-top: 1rem;
 
   div,
-  .email-link {
+  a.email-link {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
@@ -151,6 +151,48 @@ main {
         color: set-text-color($secondary-color);
       }
     }
+  }
+}
+
+// learnterminal project page
+
+.learnterminal-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "projectvideo projectsummary projectsummary"
+    "codesnippet textareabox textareabox";
+  grid-template-columns: repeat(3, 1fr);
+
+  .project-video {
+    grid-area: projectvideo;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: $secondary-color 3px solid;
+  }
+
+  .project-summary {
+    grid-area: projectsummary;
+    font-size: 1.5rem;
+  }
+
+  .code-snippet {
+    grid-area: codesnippet;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: $secondary-color 3px solid;
+  }
+
+  .textarea-box {
+    grid-area: textareabox;
+  }
+
+  .box {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
   }
 }
 
