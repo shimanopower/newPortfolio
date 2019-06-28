@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/shimanopower/newPortfolio/issues"
   },
-  "homepage": "https://www.audreysmonsters.com/newPortfolio",
+  "homepage": "https://audreysmonsters.com/newPortfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
