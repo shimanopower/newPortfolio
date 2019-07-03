@@ -143,7 +143,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -210,32 +210,108 @@ main {
       .boxes a.email-link:hover span {
         color: #000; }
 
-.learnterminal-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "projectvideo projectsummary projectsummary" "codesnippet textareabox textareabox";
-  grid-template-columns: repeat(3, 1fr); }
-  .learnterminal-info .project-video {
-    grid-area: projectvideo;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    border: #d4fe01 3px solid; }
-  .learnterminal-info .project-summary {
-    grid-area: projectsummary;
-    font-size: 1.5rem; }
-  .learnterminal-info .code-snippet {
-    grid-area: codesnippet;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    border: #d4fe01 3px solid; }
-  .learnterminal-info .textarea-box {
-    grid-area: textareabox; }
-  .learnterminal-info .box {
-    background: #3e3d3d;
-    padding: 0.5rem;
-    border-bottom: #d4fe01 5px solid; }
+.row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 5rem; }
+  .row1 .box1 {
+    flex: 60%;
+    height: auto; }
+  .row1 .box2 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    flex: 40%; }
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 1rem; }
+  .row2 .box1 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    flex: 60%;
+    max-width: 60%; }
+  .row2 .box2 {
+    flex: 40%;
+    max-width: 40%; }
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .row3 .box1 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    flex: 60%;
+    max-width: 60%; }
+  .row3 .box2 {
+    flex: 40%;
+    max-width: 40%;
+    max-height: 4rem; }
+
+.row4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .row4 .box1 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    flex: 60%;
+    max-width: 60%; }
+  .row4 .box2 {
+    flex: 40%;
+    max-width: 40%;
+    max-height: 4rem; }
+
+.row5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .row5 .box1 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    flex: 60%;
+    max-width: 60%; }
+  .row5 .box2 {
+    flex: 40%;
+    max-width: 40%;
+    max-height: 4rem; }
+
+.row6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .row6 .box1 {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    flex: 60%;
+    max-width: 60%; }
+  .row6 .box2 {
+    flex: 40%;
+    max-width: 40%;
+    max-height: 4rem; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -297,9 +373,6 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "box1";
-    grid-template-columns: 1fr; }
-  .learnterminal-info {
-    grid-template-areas: "projectvideo" "projectsummary" "codesnippet" "textareabox";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

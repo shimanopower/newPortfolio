@@ -9,6 +9,8 @@ $background-opacity: 0.8;
   transition: all 0.5s ease-out;
 }
 
+// hmm
+
 @mixin background {
   @if $show-home-image {
     &#bg-img {

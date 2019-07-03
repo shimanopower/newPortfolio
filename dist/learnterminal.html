@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Learn Terminal</title>
   </head>
+
+<!-- MENU  -->
 
   <body>
     <header>
@@ -36,7 +38,7 @@
               Home
             </a>
           </li>
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="about.html" class="nav-link">
               About Me
             </a>
@@ -55,6 +57,8 @@
       </nav>
     </header>
 
+    <!-- HEADLINES -->
+
     <main id="learnterminal">
       <h1 class="lg-heading">
         Learn Terminal
@@ -63,43 +67,123 @@
       <h2 class="sm-heading">
         An iOS Project
       </h2>
-      <div class="learnterminal-info">
-        <div class="project-videoo">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/iqREo9_YBg4"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+
+      <!-- Row 1  -->
+
+      <div class="row1">
+        <iframe class="box1"
+          src="https://www.youtube.com/embed/iqREo9_YBg4"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="box2">
+            <h3 class="text-secondary">About the project</h3>
+            <p>
+              The Learn Terminal Project is about teaching basic Unix commands to
+              use in the command line. The user can hit the plus button from the
+              UINavigationBar to select from a number of ordinary language
+              commands (i.e. “list files”) and add ordinary language options (i.e.
+              “ignore case”), and then the appropriate command with flags shows up
+              in a little terminal window below (i.e. find ~ -iname
+              pictureofcat.jpg”).
+            </p>
         </div>
-        <div class="project-summary">
-          <h3 class="text-secondary">About the project</h3>
+      </div>
+
+      <!-- row 2 -->
+
+      <div class="row2">
+        <div class="box1">
+          <h3 class="text-secondary">Behind the scenes</h3>
           <p>
-            The Learn Terminal Project is about teaching basic Unix commands for
-            the commmand line
+            The commands are created via a struct that uses a friendly name
+            property for the ordinary language description, a root command
+            property for the root unix command, and an array of options property
+            to construct the rest of the String. The options are created via
+            three classes: SelectCommand (grouped tables), CheckCommand
+            (switches), and TextCommand (text fields). Typecasting is used both
+            to create the final string and to create custom table view cells.
           </p>
         </div>
-
-        <div class="code-snippet">
-          <img
-            src="img/projects/LearnTerminalAssets/codeSnippetAC.png"
+        <img class="box2"
+            src="img/projects/LearnTerminalAssets/CommandStructScreenshot.png"
             alt="Place Holder Image"
-            class="code-snippet"
-          />
-        </div>
+        />
+      </div>
 
-        <div class="textarea-box">
-          <h3 class="text-secondary">UIAlertControllers</h3>
+        <!-- row 3 -->
+
+      <div class="row3"">
+        <div class="box1">
+          <h3 class="text-secondary">Style</h3>
           <p>
-            I actually went through a number of iterations on my alert
-            controllers
+            Stylistically, I sought to make the terminal area look as much like
+            a terminal as possible. I did this by using a black background with
+            white text, the menlo-bold UIFont (one of only two monospaced fonts
+            available in iOS), and an alert controller with text fields that
+            prompts the user to enter a username and computer name so that I
+            create the typical ComputerName:DirectoryName Username$ CL prompt.
+          </p>
+        </div>
+        <img class="box2"
+          src="img/projects/LearnTerminalAssets/terminalArea.png"
+          alt="Place Holder Image"
+        />
+      </div>
+
+<!-- Row 4 -->
+
+      <div class="row4">
+        <div class="box1">
+          <h3 class="text-secondary">Custom UIAlertControllers</h3>
+          <p>
+            But I actually went through a number of iterations on my alerts. My
+            original alert controller had some dull greyed out text explaining
+            the AC. So I started going down the rabbit hole of making custom ACs
+            by writing an extension to UIAlertController.
+          </p>
+        </div>
+        <div class="box2">
+          <img
+            src="img/projects/LearnTerminalAssets/orginalACScreenshot.png"
+            alt="Place Holder Image"
+          />
+      </div>
+
+<!-- row 5  -->
+
+      <div class="row5"></div>
+        <div class="box1">
+          <h3 class="text-secondary">Human Interface Guidelines</h3>
+          <p>
+            Although not only did that look hideous, it probably wouldn’t get
+            through Apple’s review process, as you are supposed to use the ACs as is.
+            According to Apple’s Human Interface Guidelines (AHIG) we should
+            avoid explaining the alert buttons, because if the button titles are
+            clear, then it shouldn’t require additional explanation.
+          </p>
+        </div>
+        <img class="box2"
+            src="img/projects/LearnTerminalAssets/secondACScreenshot.png"
+            alt="Place Holder Image"
+          />
+      </div>
+
+      <!-- row 6 -->
+
+      <div class="row6">
+        <img class="box1"
+        src="img/projects/LearnTerminalAssets/finalDestructiveAC.png"
+        alt="Place Holder Image"
+        />
+        <div class="box2">
+          <p>
+            And I used .destructive as the style because as per AHIG, should appear in red and I provided a cancel button marked .cancel so that it appears in bold at the bottom to instill confidence that you can abandon the destructive task. And I think the final result is far more clear and less clown like. =
           </p>
         </div>
       </div>
-    </main>
 
+    </main>
     <footer id="main-footer">
       Copyright &copy; 2019
     </footer>

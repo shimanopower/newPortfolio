@@ -61,15 +61,20 @@
     grid-template-columns: 1fr;
   }
 
-  .learnterminal-info {
-    grid-template-areas:
-      "projectvideo"
-      "projectsummary"
-      "codesnippet"
-      "textareabox";
+  // .learnterminal-info {
+  //   grid-template-areas:
+  //     "projectvideo"
+  //     "projectsummary"
+  //     "commands"
+  //     "codeimg"
+  //     "terminalimg"
+  //     "stylisticallty"
+  //     "uglyac"
+  //     "cusomac"
+  //     "hig";
 
-    grid-template-columns: 1fr;
-  }
+  //   grid-template-columns: 1fr;
+  // }
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
