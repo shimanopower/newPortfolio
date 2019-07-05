@@ -198,8 +198,7 @@ main {
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
     flex: 60%;
-    max-width: 60%;
-    margin: 20px;
+    margin: 10px;
   }
 
   .box2 {
@@ -209,117 +208,7 @@ main {
     max-width: 400px;
     width: 100%;
     height: auto;
-    margin: 20px;
-  }
-}
-
-// row 3 how I made it look like a terminal and terminal screenshot
-
-.row3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  .box1 {
-    font-size: 1rem;
-    // border: 3px #fff solid;
-    flex: 60%;
-    max-width: 60%;
-    margin: 20px;
-  }
-
-  .box2 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px;
-  }
-}
-
-// custom ac paragraph and extennsion pic
-
-.row4 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  .box1 {
-    font-size: 1rem;
-    // border: 3px #fff solid;
-    margin: 20px;
-  }
-
-  .box2 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px;
-  }
-}
-
-.row5 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  .box1 {
-    font-size: 1rem;
-    // border: 3px #fff solid;
-    margin: 20px;
-    flex: 60%;
-    max-width: 60%;
-  }
-
-  .box2 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px;
-  }
-}
-
-.row6 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  .box1 {
-    font-size: 1rem;
-    // border: 3px #fff solid;
-    margin: 20px;
-    flex: 60%;
-    max-width: 60%;
-  }
-
-  .box2 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px;
+    margin: 10px;
   }
 }
 

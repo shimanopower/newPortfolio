@@ -61,17 +61,11 @@
     grid-template-columns: 1fr;
   }
 
-  // .learnterminal-info {
-  //   grid-template-areas:
-  //     "projectvideo"
-  //     "projectsummary"
-  //     "commands"
-  //     "codeimg"
-  //     "terminalimg"
-  //     "stylisticallty"
-  //     "uglyac"
-  //     "cusomac"
-  //     "hig";
+  .learnterminal-info {
+    .row2 {
+      flex-wrap: wrap;
+    }
+  }
 
   //   grid-template-columns: 1fr;
   // }

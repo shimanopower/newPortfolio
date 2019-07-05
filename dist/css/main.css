@@ -234,83 +234,12 @@ main {
   .row2 .box1 {
     font-size: 1rem;
     flex: 60%;
-    max-width: 60%;
-    margin: 20px; }
+    margin: 10px; }
   .row2 .box2 {
     max-width: 400px;
     width: 100%;
     height: auto;
-    margin: 20px; }
-
-.row3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px; }
-  .row3 .box1 {
-    font-size: 1rem;
-    flex: 60%;
-    max-width: 60%;
-    margin: 20px; }
-  .row3 .box2 {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px; }
-
-.row4 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px; }
-  .row4 .box1 {
-    font-size: 1rem;
-    margin: 20px; }
-  .row4 .box2 {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px; }
-
-.row5 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px; }
-  .row5 .box1 {
-    font-size: 1rem;
-    margin: 20px;
-    flex: 60%;
-    max-width: 60%; }
-  .row5 .box2 {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px; }
-
-.row6 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px; }
-  .row6 .box1 {
-    font-size: 1rem;
-    margin: 20px;
-    flex: 60%;
-    max-width: 60%; }
-  .row6 .box2 {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 20px; }
+    margin: 10px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -373,6 +302,8 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "box1";
     grid-template-columns: 1fr; }
+  .learnterminal-info .row2 {
+    flex-wrap: wrap; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
