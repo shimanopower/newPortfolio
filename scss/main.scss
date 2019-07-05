@@ -10,7 +10,6 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
-  margin: 0;
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
@@ -156,107 +155,117 @@ main {
 
 // learnterminal project page
 
+// Row 1 Youtube video and the summary
+
 .row1 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  // margin-top: 1rem;
+  // margin-bottom: 5rem;
+  align-items: center;
+  padding: 5px;
 
-  .box1 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    flex: 60%;
-    height: auto;
+  #player {
+    margin: 20px;
   }
 
   .box2 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    flex: 40%;
+    // padding: 0.5rem 1.5rem;
+    // margin-bottom: 3rem;
+    margin: 20px;
+    font-size: 1rem;
+    flex: 1;
   }
 }
+
+// row2 how commands are created and the commands struct
 
 .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
-  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 
   .box1 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
+    // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
     flex: 60%;
     max-width: 60%;
+    margin: 20px;
   }
 
   .box2 {
     // border: 3px #fff solid;
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
-    flex: 40%;
-    max-width: 40%;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
   }
 }
+
+// row 3 how I made it look like a terminal and terminal screenshot
 
 .row3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  padding: 5px;
 
   .box1 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
     flex: 60%;
     max-width: 60%;
+    margin: 20px;
   }
 
   .box2 {
     // border: 3px #fff solid;
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
   }
 }
+
+// custom ac paragraph and extennsion pic
 
 .row4 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  padding: 5px;
 
   .box1 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    flex: 60%;
-    max-width: 60%;
+    margin: 20px;
   }
 
   .box2 {
     // border: 3px #fff solid;
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
   }
 }
 
@@ -264,15 +273,14 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  padding: 5px;
 
   .box1 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
+    margin: 20px;
     flex: 60%;
     max-width: 60%;
   }
@@ -281,9 +289,10 @@ main {
     // border: 3px #fff solid;
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
   }
 }
 
@@ -291,15 +300,14 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  padding: 5px;
 
   .box1 {
     font-size: 1rem;
     // border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
+    margin: 20px;
     flex: 60%;
     max-width: 60%;
   }
@@ -308,9 +316,10 @@ main {
     // border: 3px #fff solid;
     // padding: 0.5rem 1.5rem;
     // margin-bottom: 3rem;
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
   }
 }
 

@@ -96,7 +96,6 @@ body {
   background: #313030;
   color: #fff;
   height: 100%;
-  margin: 0;
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
@@ -213,105 +212,105 @@ main {
 .row1 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-  margin-bottom: 5rem; }
-  .row1 .box1 {
-    flex: 60%;
-    height: auto; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; }
+  .row1 #player {
+    margin: 20px; }
   .row1 .box2 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    flex: 40%; }
+    margin: 20px;
+    font-size: 1rem;
+    flex: 1; }
 
 .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
-  margin-top: 1rem; }
+  justify-content: center;
+  align-items: center;
+  padding: 5px; }
   .row2 .box1 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
     flex: 60%;
-    max-width: 60%; }
+    max-width: 60%;
+    margin: 20px; }
   .row2 .box2 {
-    flex: 40%;
-    max-width: 40%; }
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px; }
 
 .row3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem; }
+  padding: 5px; }
   .row3 .box1 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
     flex: 60%;
-    max-width: 60%; }
+    max-width: 60%;
+    margin: 20px; }
   .row3 .box2 {
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem; }
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px; }
 
 .row4 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem; }
+  padding: 5px; }
   .row4 .box1 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    flex: 60%;
-    max-width: 60%; }
+    margin: 20px; }
   .row4 .box2 {
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem; }
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px; }
 
 .row5 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem; }
+  padding: 5px; }
   .row5 .box1 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
+    margin: 20px;
     flex: 60%;
     max-width: 60%; }
   .row5 .box2 {
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem; }
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px; }
 
 .row6 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem; }
+  padding: 5px; }
   .row6 .box1 {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
+    margin: 20px;
     flex: 60%;
     max-width: 60%; }
   .row6 .box2 {
-    flex: 40%;
-    max-width: 40%;
-    max-height: 4rem; }
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
