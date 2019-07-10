@@ -270,6 +270,10 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  #bg-img:after {
+    height: 125% !important; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
