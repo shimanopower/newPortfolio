@@ -89,13 +89,12 @@
           <div class="box2">
             <h3 class="text-secondary">About the project</h3>
             <p>
-              The Learn Terminal Project is about teaching basic Unix commands
-              to use in the command line. The user can hit the plus button from
-              the UINavigationBar to select from a number of ordinary language
-              commands (i.e. “list files”) and add ordinary language options
-              (i.e. “ignore case”), and then the appropriate command with flags
-              shows up in a little terminal window below (i.e. find ~ -iname
-              pictureofcat.jpg”).
+              The Learn Terminal Project is about teaching basic Unix commands.
+              The user can select the plus button from the UINavigationBar to
+              select from a number of ordinary language commands (i.e. “list
+              files”) and add ordinary language options (i.e. “ignore case”),
+              and then the appropriate command is displayed in the terminal
+              window (i.e. find ~ -iname pictureofcat.jpg”).
             </p>
           </div>
         </div>
@@ -117,80 +116,57 @@
           <img
             class="box2"
             src="img/projects/LearnTerminalAssets/CommandStructScreenshot.png"
-            alt="Place Holder Image"
+            alt="A picture of the command line struct"
           />
         </div>
-        <!-- row 3 -->
+        <!-- row3 -->
         <div class="row2">
           <div class="box1">
-            <h3 class="text-secondary">Style</h3>
+            <h3 class="text-secondary">The Terminal</h3>
             <p>
-              Stylistically, I sought to make the terminal area look as much
-              like a terminal as possible. I did this by using a black
-              background with white text, the menlo-bold UIFont (one of only two
-              monospaced fonts available in iOS), and an alert controller with
-              text fields that prompts the user to enter a username and computer
-              name so that I create the typical ComputerName:DirectoryName
-              Username$ CL prompt.
+              Stylistically, the menlo-bold UIFont (one of only two monospaced
+              fonts available in iOS) was used with white text on a black
+              background, and an alert controller with text fields that prompt
+              the user to enter a username and computer name to create the
+              ComputerName:DirectoryName Username$ CLI prompt.
             </p>
           </div>
           <img
             class="box2"
             src="img/projects/LearnTerminalAssets/terminalArea.png"
-            alt="Place Holder Image"
+            alt="A picture of a CLI terminal"
           />
         </div>
+
         <!-- Row 4 -->
         <div class="row2">
           <div class="box1">
             <h3 class="text-secondary">Custom UIAlertControllers</h3>
             <p>
-              But I actually went through a number of iterations on my alerts.
-              My original alert controller had some dull greyed out text
-              explaining the AC. So I started going down the rabbit hole of
-              making custom ACs by writing an extension to UIAlertController.
+              An .actionsheet alert controller with a rather verbose warning was
+              used for the orginal reset alert controller. But the warning by
+              default used dull greyed out because only the destructive action
+              (deleting the current command strring) appears in bold. To
+              increase the readability of that text easier to read, custom AC
+              were created by writing an extension to the Class
+              UIAlertController.
+            </p>
+            <p>
+              Although not only did that not look great, it probably wouldn’t
+              get through Apple’s review process, as you are supposed to use the
+              ACs as is. According to Apple’s Human Interface Guidelines (AHIG)
+              developers should avoid explaining the alert buttons, because if
+              the button titles are clear, then the AC shouldn’t require
+              additional explanation. Using .destructive makes the destrructive
+              action appear in red and .cancel makes abandoning the destructive
+              action bold. This is meant to instill confidence that you can
+              abandon the destructive action.
             </p>
           </div>
           <img
             class="box2"
             src="img/projects/LearnTerminalAssets/extensionACScreensbhot.png"
-            alt="Place Holder Image"
-          />
-        </div>
-        <!-- row 5  -->
-        <div class="row2">
-          <div class="box1">
-            <h3 class="text-secondary">Human Interface Guidelines</h3>
-            <p>
-              Although not only did that look hideous, it probably wouldn’t get
-              through Apple’s review process, as you are supposed to use the ACs
-              as is. According to Apple’s Human Interface Guidelines (AHIG) we
-              should avoid explaining the alert buttons, because if the button
-              titles are clear, then it shouldn’t require additional
-              explanation.
-            </p>
-          </div>
-          <img
-            class="box2"
-            src="img/projects/LearnTerminalAssets/secondACScreenshot.png"
-            alt="Place Holder Image"
-          />
-        </div>
-        <!-- row 6 -->
-        <div class="row2">
-          <div class="box1">
-            <p>
-              And I used .destructive as the style because as per AHIG, should
-              appear in red and I provided a cancel button marked .cancel so
-              that it appears in bold at the bottom to instill confidence that
-              you can abandon the destructive task. And I think the final result
-              is far more clear and less clown like.
-            </p>
-          </div>
-          <img
-            class="box2"
-            src="img/projects/LearnTerminalAssets/finalDestructiveAC.png"
-            alt="Place Holder Image"
+            alt="A picture of an of an extension of alert controller"
           />
         </div>
       </div>
