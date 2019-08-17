@@ -242,4 +242,86 @@ main {
   height: 60px;
 }
 
+
+.towcheck-info {
+  .row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-top: 1rem;
+    // margin-bottom: 5rem;
+    align-items: center;
+    padding: 5px;
+
+    .column1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+
+      .box1 {
+        margin: 20px;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+      }
+      .box2 {
+        margin: 20px;
+        font-size: 1.5rem;
+        flex: 1;
+      }  
+    }
+    .column2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+
+      .box1 {
+        margin: 20px;
+        font-size: 1.5rem;
+        flex: 1;
+      }
+    }
+  }
+  
+  // button styles
+  
+  .btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+  }
+  
+  .btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
+  }
+  
+  .btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+  }
+  
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+  }
+}
+
+
 @import "mobile";

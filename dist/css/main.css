@@ -241,7 +241,7 @@ main {
     height: auto;
     margin: 10px; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .towcheck-info .btn-dark, .towcheck-info .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -259,6 +259,64 @@ main {
   color: #333; }
 
 #main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #171717;
+  color: #fff;
+  height: 60px; }
+
+.towcheck-info .row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; }
+  .towcheck-info .row1 .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; }
+    .towcheck-info .row1 .column1 .box1 {
+      margin: 20px;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin: 10px; }
+    .towcheck-info .row1 .column1 .box2 {
+      margin: 20px;
+      font-size: 1.5rem;
+      flex: 1; }
+  .towcheck-info .row1 .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; }
+    .towcheck-info .row1 .column2 .box1 {
+      margin: 20px;
+      font-size: 1.5rem;
+      flex: 1; }
+
+.towcheck-info .btn, .towcheck-info .btn-dark, .towcheck-info .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .towcheck-info .btn:hover, .towcheck-info .btn-dark:hover, .towcheck-info .btn-light:hover {
+    background: #d4fe01;
+    color: #000; }
+
+.towcheck-info .btn-dark {
+  background: black;
+  color: #fff; }
+
+.towcheck-info .btn-light {
+  background: #b1afaf;
+  color: #333; }
+
+.towcheck-info #main-footer {
   text-align: center;
   padding: 1rem;
   background: #171717;
