@@ -188,6 +188,18 @@ main {
       border-color: #d4fe01;
       transition: all 0.5s ease-out; }
 
+.privacypolicy {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .privacypolicy img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .privacypolicy img:hover {
+      opacity: 0.5;
+      border-color: #d4fe01;
+      transition: all 0.5s ease-out; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -210,32 +222,32 @@ main {
       .boxes a.email-link:hover span {
         color: #000; }
 
-.row1 {
+.learn-terminal .row1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 5px; }
-  .row1 #player {
+  .learn-terminal .row1 #player {
     margin: 20px; }
-  .row1 .box2 {
+  .learn-terminal .row1 .box2 {
     margin: 20px;
     font-size: 1.5rem;
     flex: 1; }
 
-.row2 {
+.learn-terminal .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   padding: 5px; }
-  .row2 .box1 {
+  .learn-terminal .row2 .box1 {
     font-size: 1rem;
     flex: 60%;
     margin: 10px; }
-  .row2 .box2 {
+  .learn-terminal .row2 .box2 {
     max-width: 400px;
     width: 100%;
     height: auto;
@@ -280,7 +292,7 @@ main {
     padding: 5px; }
     .towcheck-info .row1 .column1 .box1 {
       margin: 20px;
-      max-width: 400px;
+      max-width: 200px;
       width: 100%;
       height: auto;
       margin: 10px; }

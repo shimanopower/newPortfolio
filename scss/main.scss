@@ -109,6 +109,45 @@ main {
 
 // Projects
 
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+
+// .projects img {
+//   .projects img {
+//     width: 100%;
+//     border: 3px #fff solid; 
+//   -    .projects img:hover {
+//   +    .privacypolicy img:hover {
+//          opacity: 0.5;
+//          border-color: #d4fe01;
+//          transition: all 0.5s ease-out; }
+//   @@ -280,7 +280,7 @@ main {
+//        padding: 5px; }
+//        .towcheck-info .row1 .column1 .box1 {
+//          margin: 20px;
+//   -      max-width: 400px;
+//   +      max-width: 200px;
+//          width: 100%;
+//          height: auto;
+//          margin: 10px; }
+
+        //  privacy policy
+
 .privacypolicy {
   display: grid;
   grid-gap: 0.7rem;
@@ -158,55 +197,57 @@ main {
 
 // Row 1 Youtube video and the summary
 
-.row1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  // margin-top: 1rem;
-  // margin-bottom: 5rem;
-  align-items: center;
-  padding: 5px;
-
-  #player {
-    margin: 20px;
+.learn-terminal {
+  .row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-top: 1rem;
+    // margin-bottom: 5rem;
+    align-items: center;
+    padding: 5px;
+  
+    #player {
+      margin: 20px;
+    }
+  
+    .box2 {
+      margin: 20px;
+      font-size: 1.5rem;
+      flex: 1;
+    }
   }
-
-  .box2 {
-    margin: 20px;
-    font-size: 1.5rem;
-    flex: 1;
-  }
-}
-
-// row2 how commands are created and the commands struct
-
-.row2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  .box1 {
-    font-size: 1rem;
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    flex: 60%;
-    margin: 10px;
-  }
-
-  .box2 {
-    // border: 3px #fff solid;
-    // padding: 0.5rem 1.5rem;
-    // margin-bottom: 3rem;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 10px;
-  }
+  
+  // row2 how commands are created and the commands struct
+  
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  
+    .box1 {
+      font-size: 1rem;
+      // border: 3px #fff solid;
+      // padding: 0.5rem 1.5rem;
+      // margin-bottom: 3rem;
+      flex: 60%;
+      margin: 10px;
+    }
+  
+    .box2 {
+      // border: 3px #fff solid;
+      // padding: 0.5rem 1.5rem;
+      // margin-bottom: 3rem;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin: 10px;
+    }
+  }  
 }
 
 // button styles
@@ -263,7 +304,7 @@ main {
 
       .box1 {
         margin: 20px;
-        max-width: 400px;
+        max-width: 200px;
         width: 100%;
         height: auto;
         margin: 10px;
