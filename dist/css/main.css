@@ -159,8 +159,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio bio box1" "box2 box2 box1";
+  grid-template-areas: "bio bio bio-image" "box2 box2 bio-image";
   grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bio-image;
+    margin: auto;
+    border-radius: 50%;
+    border: #d4fe01 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
