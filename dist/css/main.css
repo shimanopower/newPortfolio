@@ -159,7 +159,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio bio bio-image" "box2 box2 bio-image";
+  grid-template-areas: "bio bio bio" "bio-image box2 box2" "box1 box2 box2";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bio-image;
@@ -178,6 +178,7 @@ main {
     .about-info .box-2 p {
       padding: 1rem; }
   .about-info .box {
+    grid-area: boxing;
     background: #3e3d3d;
     padding: 0.5rem;
     border-bottom: #d4fe01 5px solid; }
