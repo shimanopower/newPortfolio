@@ -62,16 +62,9 @@
   .about-info {
     grid-template-areas:
       "bio"
-      "box2"
       "box1";
 
     grid-template-columns: 1fr;
-  }
-
-  .learnterminal-info {
-    .row2 {
-      flex-wrap: wrap;
-    }
   }
 
   .towcheck-info {
@@ -79,8 +72,6 @@
       flex-direction: column;
     }
   }
-  //   grid-template-columns: 1fr;
-  // }
 
   .projects {
     grid-template-columns: repeat(2, 1fr);

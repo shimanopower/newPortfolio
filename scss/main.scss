@@ -80,17 +80,16 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bio bio bio"
-    "bio-image box2 box2"
-    "box1 box2 box2";
+    "bioimage bio bio"
+    "box2 box2 box2";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
-    grid-area: bio-image;
+    grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-  }
+  } 
 
   .bio {
     grid-area: bio;
@@ -100,18 +99,8 @@ main {
   .box-1 {
     grid-area: box1;
   }
-
-  .box-2 {
-    grid-area: box2;
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    p {
-      padding: 1rem;
-    }
-  }
-
+  
   .box {
-    grid-area: boxing;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
@@ -182,63 +171,6 @@ main {
       @include easeOut;
     }
   }
-}
-
-// learnterminal project page
-
-// Row 1 Youtube video and the summary
-
-.learn-terminal {
-  .row1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    // margin-top: 1rem;
-    // margin-bottom: 5rem;
-    align-items: center;
-    padding: 5px;
-  
-    #player {
-      margin: 20px;
-    }
-  
-    .box2 {
-      margin: 20px;
-      font-size: 1.5rem;
-      flex: 1;
-    }
-  }
-  
-  // row2 how commands are created and the commands struct
-  
-  .row2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-  
-    .box1 {
-      font-size: 1rem;
-      // border: 3px #fff solid;
-      // padding: 0.5rem 1.5rem;
-      // margin-bottom: 3rem;
-      flex: 60%;
-      margin: 10px;
-    }
-  
-    .box2 {
-      // border: 3px #fff solid;
-      // padding: 0.5rem 1.5rem;
-      // margin-bottom: 3rem;
-      max-width: 400px;
-      width: 100%;
-      height: auto;
-      margin: 10px;
-    }
-  }  
 }
 
 .towcheck-info {

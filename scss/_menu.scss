@@ -92,10 +92,10 @@
 
     .portrait {
       width: 250px;
-      height: 250px;
-      background: url("../img/workProfile.jpg");
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
+      height: 128px;
+      background: url("../img/xor.png");
+      // border-radius: 50%;
+      // border: solid 3px $secondary-color;
     }
   }
 
@@ -132,6 +132,6 @@
 // Delay each new slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.12s;
+    transition-delay: $x * 0.05s;
   }
 }
