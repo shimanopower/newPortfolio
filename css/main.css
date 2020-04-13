@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 128px;
-      background: url("../img/xor.png"); }
+      background: url("../img/XOR.png"); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -319,7 +319,7 @@ main {
     .menu-branding .portrait {
       background: url("../img/XORSmall.png");
       width: 150px;
-      height: 150px; }
+      height: 77px; }
   .about-info {
     grid-template-areas: "bio" "box1";
     grid-template-columns: 1fr; }
