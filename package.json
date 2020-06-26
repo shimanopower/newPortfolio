@@ -18,10 +18,10 @@
   },
   "homepage": "https://audreysmonsters.com/newPortfolio",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.13.1"
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "sass": "^1.26.3"
+    "sass": "^1.26.9"
   }
 }
