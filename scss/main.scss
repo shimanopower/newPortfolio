@@ -1,5 +1,8 @@
-@import "config";
-@import "menu";
+@use "config" as *;
+@use "menu";
+@use "mobile";
+
+@include menu.render;
 
 * {
   box-sizing: border-box;
@@ -29,7 +32,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba($primary-color-light-2, 0.5);
   }
 }
 
@@ -101,7 +104,7 @@ main {
   }
   
   .box {
-    background: lighten($primary-color, 5);
+    background: $primary-color-light-5;
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
@@ -241,22 +244,22 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: $primary-color-dark-50;
   color: #fff;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: $primary-color-light-50;
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: $primary-color-dark-10;
   color: set-text-color($primary-color);
   height: 60px;
 }
 
-@import "mobile";
+@include mobile.render;

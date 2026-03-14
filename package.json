@@ -4,8 +4,12 @@
   "description": "A new work portfolio for my personal website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "build": "sass scss:dist/css --no-source-map",
+    "watch:css": "sass --watch scss:dist/css --no-source-map",
+    "preview": "python3 -m http.server 8000 --directory dist",
+    "sass": "npm run watch:css",
+    "prepare:dist": "cp CNAME dist/CNAME",
+    "deploy": "npm run build && npm run prepare:dist && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,12 +20,9 @@
   "bugs": {
     "url": "https://github.com/shimanopower/newPortfolio/issues"
   },
-  "homepage": "https://audreysmonsters.com/newPortfolio",
-  "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.14.1"
-  },
+  "homepage": "https://audreysmonsters.com",
   "devDependencies": {
-    "sass": "^1.26.9"
+    "gh-pages": "^6.3.0",
+    "sass": "^1.98.0"
   }
 }
