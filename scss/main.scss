@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   @include background;
   background: $primary-color;
@@ -26,10 +32,12 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    line-height: 0.95;
   }
 
   &.sm-heading {
+    font-size: clamp(1rem, 3vw, 1.35rem);
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba($primary-color-light-2, 0.5);
@@ -52,11 +60,15 @@ header {
 }
 
 main {
-  padding: 4rem;
-  // height: 100%;
+  width: min(100%, 75rem);
+  margin: 0 auto;
+  padding: 6rem 4rem 4rem;
   min-height: calc(100vh - 60px);
 
   .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 1rem;
 
     a {
@@ -84,18 +96,21 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "box2 box2 box2";
+    "box1 box1 box1";
   grid-template-columns: repeat(3, 1fr);
+  align-items: start;
 
   .bio-image {
     grid-area: bioimage;
     margin: auto;
+    width: min(100%, 16rem);
     border-radius: 50%;
     border: $secondary-color 3px solid;
   } 
 
   .bio {
     grid-area: bio;
+    min-width: 0;
     font-size: 1.5rem;
   }
 
@@ -133,26 +148,45 @@ main {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
   margin-top: 1rem;
 
-  div,
-  a.email-link {
-    font-size: 2rem;
+  .contact-card {
+    width: min(100%, 36rem);
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    padding: 1.25rem 1.5rem;
+    font-size: clamp(1.1rem, 3vw, 2rem);
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
       background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
+      border-color: $secondary-color;
+
+      .contact-link,
+      .contact-link span {
         color: set-text-color($secondary-color);
       }
     }
+  }
+
+  .contact-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.65rem;
+    width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-label {
+    flex: 0 0 auto;
+  }
+
+  .contact-value {
+    min-width: 0;
   }
 }
 
@@ -180,50 +214,78 @@ main {
   .row1 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    // margin-top: 1rem;
-    // margin-bottom: 5rem;
-    align-items: center;
+    align-items: flex-start;
     padding: 5px;
 
     .column1 {
       display: flex;
       box-sizing: border-box;
+      flex: 0 1 300px;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       padding: 5px;
 
-      .box1 {
-        width: 100%;
-        height: auto;
-        margin: 10px;
+      .video-frame {
+        width: min(100%, 300px);
+        aspect-ratio: 15 / 32;
       }
+
+      .video-frame iframe {
+        width: 100% !important;
+        height: 100% !important;
+        border: 0;
+      }
+
       .box2 {
         margin: 10px;
-      }  
+      }
     }
+
     .column2 {
       display: flex;
       box-sizing: border-box;
+      flex: 1 1 320px;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      padding: 40px;
+      align-items: flex-start;
+      padding: 0 1rem;
 
       .box1 {
         font-size: 1.5rem;
-        flex: 1;
-        margin: 10px;
+        flex: 1 1 auto;
+        margin: 0;
+      }
+
+      .video-mobile-link {
+        display: none;
+        margin: 1rem 0 1.5rem;
+
+        a {
+          display: inline-block;
+          padding: 0.85rem 1.15rem;
+          border: 2px solid $secondary-color;
+          border-radius: 999px;
+          color: $secondary-color;
+          font-size: 1rem;
+          text-decoration: none;
+        }
       }
 
       .box2 {
         font-size: 1.5rem;
-        flex: 1;
-        margin: 10px;  
+        flex: 1 1 auto;
+        margin: 1.5rem 0 0;
+
+        a {
+          display: inline-block;
+          max-width: min(100%, 220px);
+        }
       }
     }
   }
@@ -256,10 +318,10 @@ main {
 
 #main-footer {
   text-align: center;
+  min-height: 60px;
   padding: 1rem;
   background: $primary-color-dark-10;
   color: set-text-color($primary-color);
-  height: 60px;
 }
 
 @include mobile.render;
