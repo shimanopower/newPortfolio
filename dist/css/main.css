@@ -4,14 +4,14 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
   background: #fff;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu-btn.close {
   transform: rotate(180deg);
@@ -51,7 +51,7 @@
   background: #242323;
   list-style: none;
   transform: translate3d(0, -100%, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
@@ -59,7 +59,7 @@
 .menu-branding {
   background: #313030;
   transform: translate3d(0, 100%, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
@@ -70,7 +70,7 @@
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
@@ -87,26 +87,26 @@
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .menu .nav-link:hover {
   color: #d4fe01;
 }
 
 .nav-item:nth-child(1) {
-  transition-delay: 0.05s;
+  transition-delay: 0.025s;
 }
 
 .nav-item:nth-child(2) {
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .nav-item:nth-child(3) {
-  transition-delay: 0.15s;
+  transition-delay: 0.075s;
 }
 
 .nav-item:nth-child(4) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 * {
@@ -193,7 +193,7 @@ main .icons {
 }
 main .icons a {
   padding: 0.4rem;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 main .icons a:hover {
   color: #d4fe01;
@@ -245,7 +245,7 @@ main#home h1 {
 .privacypolicy img:hover {
   opacity: 0.5;
   border-color: #d4fe01;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .boxes {
@@ -261,7 +261,7 @@ main#home h1 {
   border: 3px #fff solid;
   padding: 1.25rem 1.5rem;
   font-size: clamp(1.1rem, 3vw, 2rem);
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 .boxes .contact-card:hover {
   background: #d4fe01;
@@ -299,7 +299,7 @@ main#home h1 {
 .projects img:hover {
   opacity: 0.5;
   border-color: #d4fe01;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .towcheck-info .row1 {
