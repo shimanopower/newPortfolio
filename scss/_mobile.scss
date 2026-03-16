@@ -8,13 +8,6 @@
     }
   }
 
-  // landscape
-  @include landscape {
-    #bg-img:after {
-      height: 125% !important;
-    }
-  }
-
   // Desktops & laptops
   @include mediaLg {
     .projects {
